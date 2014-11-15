@@ -1,4 +1,4 @@
-net_neutrality_cs229
-====================
+fcc-net-neutrality-comments
+===========================
 
-Applying Machine Learning to public responses regarding Net Neutrality
+scraping, parsing and making sense of the flood of comments submitted to the FCC on net neutrality

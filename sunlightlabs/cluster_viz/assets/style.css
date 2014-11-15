@@ -1,0 +1,302 @@
+/* BASIC STRUCTURE */
+
+.graphic-container-blog {
+    width: 650px;
+    padding-top: 12px;
+    background-color: #EFECEA;
+}
+
+.graphic-container-feature {
+    width: 900px;
+    padding-top: 12px;
+    background-color: #EFECEA;
+}
+
+.header-container {
+    padding-top: 12px;
+    padding-right: 22px;
+    padding-bottom: 8px;
+    padding-left: 22px;
+    background-color: #F5F3F2;
+    overflow:auto;
+}
+
+.header-title {
+    width: 505px;
+    margin: 0;
+    float:left;
+    text-align: left,
+}
+
+.header-logo {
+    width: 100px;
+    height: 37.5px;
+    background-image: url('SunlightFoundation_logo.png');
+    background-size: 100% 100%;
+    float:right;
+}
+
+.chart-area {
+    padding-top: 22px;
+    padding-right: 0px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+.divider.solid {
+    background-color: #FFFFFF;
+}
+
+.divider.dashed {
+    border-top: 1px dashed #C0C0BB;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.footer-container {
+    height: 22px;
+    padding-top: 8px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: #E5E2E0;
+}
+
+/* TEXT */
+
+.test-text {
+    fill: #000;
+    stroke: #000;
+
+}
+
+.main-title {
+    font-family : "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", "Arial Narrow", sans-serif;
+    font-size : 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #635F5D;
+}
+
+.main-title em {
+    font-family : "Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-style: normal;
+}
+
+.explanatory { 
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size : 12px;
+    font-weight: normal;
+    font-style: italic;
+    color: #8E8883;
+}
+
+.axis text {
+    font-size : 12px;
+    font-weight: normal;
+    font-style: normal;
+    fill: #635F5D;
+    stroke: none;
+    font-family : "Franklin Gothic Book", "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+.axis .tick .unit {
+    font-family : "Franklin Gothic Demi Cond", "Franklin Gothic Medium Cond", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+.citation {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size : 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #8E8883;
+}
+
+.citation em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.citation a {
+  padding-left: 20px;
+}
+
+/* PLOT ELEMENTS */
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #FFFFFF;
+    stroke-width: 1px;
+}
+
+.y.axis text {
+    text-anchor: middle;
+}
+
+/* Button style */
+.btn-sunlight {
+  border: 3px solid #dad8d1;
+  border: 3px solid rgba(218, 216, 209, 0.8);
+  background: #cb610b;
+  background-image: -webkit-linear-gradient(#cb610b 0%, #bc5b0a 55%, #cb610b 55%);
+  background-image: -moz-linear-gradient(#cb610b 0%, #bc5b0a 55%, #cb610b 55%);
+  background-image: -ms-linear-gradient(#cb610b 0%, #bc5b0a 55%, #cb610b 55%);
+  background-image: -o-linear-gradient(#cb610b 0%, #bc5b0a 55%, #cb610b 55%);
+  background-image: linear-gradient(#cb610b 0%, #bc5b0a 55%, #cb610b 55%);
+  color: #eee;
+  font-family: "rooney-web", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 120%;
+  font-weight: 400;
+  padding: 0.45em 1.8em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 0 0;
+}
+
+.btn-sunlight:hover, .btn-sunlight:active, .btn-sunlight:focus {
+  background: #b85301;
+  background-image: -webkit-linear-gradient(#b85301 0%, #a54e01 55%, #b85301 55%);
+  background-image: -moz-linear-gradient(#b85301 0%, #a54e01 55%, #b85301 55%);
+  background-image: -ms-linear-gradient(#b85301 0%, #a54e01 55%, #b85301 55%);
+  background-image: -o-linear-gradient(#b85301 0%, #a54e01 55%, #b85301 55%);
+  background-image: linear-gradient(#b85301 0%, #a54e01 55%, #b85301 55%);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  outline: none;
+}
+
+
+/* widget-specific stuff */
+body.widget {
+    background: none;
+    background-color: #EFECEA;
+    margin: 0;
+    color: #635f5d;
+}
+
+body.widget .header-group {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+}
+body.widget .header-container {
+    height: 40px;
+}
+
+body.widget .footer-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+body.widget .header-container, body.widget .footer-container {
+    box-sizing: content-box;
+    line-height: normal;
+}
+
+body.widget .chart-area {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 74px;
+    bottom: 32px;
+}
+
+body.widget .chart-area svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* things specific to this widget */
+body.widget #doc-dialog .list-group {
+    background: #aaa;
+    overflow-y: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+body.widget #doc-dialog .list-group .list-group-item {
+    border-radius: 0;
+}
+
+body.widget .doc-view-panel {
+    display: none;
+}
+
+body.widget a.back-link {
+    color: #333;
+}
+
+/* svg styles */
+body.widget svg circle:hover {
+    stroke: #ddd !important;
+    stroke-width: 3px !important;
+}
+body.widget svg circle.selected, body.widget svg circle.selected:hover {
+    stroke: #fff !important;
+    stroke-width: 3px !important;
+}
+body.widget svg text {
+    fill: #635f5d;
+}
+body.widget .meta-container table {
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+    background: #f4f4f4;
+}
+body.widget .meta-container table .meta-label {
+    width: 20%;
+    font-weight: bold;
+    text-align: right;
+}
+body.widget .doc-view-panel .panel-body {
+    white-space: pre-wrap;
+    overflow-y: auto;
+}
+body.widget .doc-view-panel .panel-body::before, body.widget .doc-view-panel .panel-body::after {
+    display: none;
+}
+body.widget .tlabel div {
+    text-align: center;
+    padding: 5px;
+    background: rgba(255,255,255,0.25);
+    line-height: 100%;
+    font-weight: bold;
+    color: #444240;
+}
+body.widget .annotations .title div {
+    padding: 10px;
+    padding-left: 20px;
+    background: rgba(255,255,255,0.25);
+    color: #444240;
+}
+
+@media (max-width: 800px), (max-height: 600px) {
+  body.widget .zoom0 .tlabel div {
+    width: 100px;
+    margin-left: 50px;
+    font-size: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
