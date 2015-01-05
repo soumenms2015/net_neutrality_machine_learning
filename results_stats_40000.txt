@@ -1,0 +1,59 @@
+Some Info + Stats:
+
+
+We used a SVM with Gaussian kernel with various paremeters trained on the training set. 
+
+The model was choosen from a large set of models(NB, logistic regression, linear SVM) through a 10-fold cross validation on training set.
+
+We optimized parameters of SVM by a exhaustive grid search on the parameters for each topic classifier, and we classified 40000 comments with the optimized classifer. Results:
+
+
+
+Getting optimized parameters for: fair business ...
+clf__C: 1
+clf__gamma: 0.7
+tfidf__use_idf: True
+vect__min_df: 2
+Using parameters above, running the classifer on data of size  40005
+total number of comments with topic  fair business : 21039
+
+
+Getting optimized parameters for: free gov ...
+clf__C: 5
+clf__gamma: 0.3
+tfidf__use_idf: True
+vect__min_df: 1
+Using parameters above, running the classifer on data of size  40005
+total number of comments with topic  free gov : 436
+
+
+Getting optimized parameters for: idea freedom ...
+clf__C: 5
+clf__gamma: 0.5
+tfidf__use_idf: False
+vect__min_df: 1
+Using parameters above, running the classifer on data of size  40005
+total number of comments with topic  idea freedom : 20290
+
+
+Getting optimized parameters for: personal ...
+clf__C: 1
+clf__gamma: 0.3
+tfidf__use_idf: True
+vect__min_df: 2
+Using parameters above, running the classifer on data of size  40005
+total number of comments with topic  personal : 10631
+
+
+Getting optimized parameters for: form letter ...
+clf__C: 1
+clf__gamma: 1
+tfidf__use_idf: True
+vect__min_df: 1
+Using parameters above, running the classifer on data of size  40005
+total number of comments with topic  form letter : 25237
+
+
+
+The labels for the data set are in results_data_40000.json. It contains 5 sets of labels with the label for each comment. The set of labels are ordered as such:
+labels = ['fair business','free gov', 'idea freedom', 'personal', 'form letter']
